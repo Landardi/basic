@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Расчет стоимости ремонта</title>
+<script defer src="script.js"></script>
+</head>
+<body>
+<h1>Калькулятор для расчета стоимости услуг<br> по ремонту жилых помещений</h1>
+
+<p>
+<label for="work1">Наименование работы:</label>
+<input type="text" id="work1" placeholder="Название работы">
+</p>
+
+<p>
+<label for="quantity1">Количество:</label>
+<input type="number" id="quantity1" min="1">
+</p>
+
+<p>
+<label for="price1">Цена за единицу:</label>
+<input type="number" id="price1" min="1">
+</p>
+
+<button onclick="calculateTotal()">Рассчитать</button>
+
+<p id="total"></p>
+
+</body>
+</html>
