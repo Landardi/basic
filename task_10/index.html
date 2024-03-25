@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meeting Cards</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js""></script>
+</head>
+<body>
+<h1>Информация о встречах
+</h1>
+<div class="form-container">
+    <p><input type="text" id="meeting-name" placeholder="Название встречи"></p>
+    <p><input type="text" id="meeting-place" placeholder="Место встречи"></p>
+    <p><input type="datetime-local" id="meeting-time"></p>
+    <p><textarea id="meeting-description" placeholder="Описание места встречи"></textarea></p>
+    <p></p><input type="text" id="meeting-participants" placeholder="Участники встречи"></p>
+    <button onclick="addMeeting()">Add Meeting</button>
+</div>
+<div id="meeting-cards"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
