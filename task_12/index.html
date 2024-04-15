@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Календарь</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<h1>Календарь</h1>
+<form id="eventForm">
+    <label for="title">Заголовок:</label>
+    <input type="text" id="title" required><br><br>
+    
+    <label for="date">Дата:</label>
+    <input type="date" id="date" required><br><br>
+    
+    <label for="startTime">Время начала:</label>
+    <input type="time" id="startTime" required><br><br>
+    
+    <label for="endTime">Время окончания:</label>
+    <input type="time" id="endTime" required><br><br>
+    
+    <label for="description">Описание:</label><br>
+    <textarea id="description" rows="4" cols="50"></textarea><br><br>
+    
+    <button type="submit">Добавить событие</button>
+</form>
+
+<div id="eventsList"></div>
+</body>
+</html>
